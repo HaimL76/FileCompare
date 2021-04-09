@@ -1,2 +1,5 @@
 *.log
 *.tlog
+/.vs
+/x64
+/FileCompare/x64
