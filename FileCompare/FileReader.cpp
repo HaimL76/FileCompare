@@ -12,6 +12,8 @@ void FileReader::Read()
 
 	ifstream fin(filePath);
 
+	//ofstream fout(R"(C:\Users\haiml\debug.txt)");
+
 	try
 	{
 		char buff[1024];
@@ -24,6 +26,12 @@ void FileReader::Read()
 
 			const auto& stream = fin.read(buff, 1024);
 
+			auto count = stream.gcount();
+
+			//////if (count > 0)
+			//////	for (int i = 0; i < 999999; i++)
+			//////		const auto& stream0 = fout.write(buff, count);
+
 			for (int i = 0; i < 1024; i++)
 				cout << buff[i];
 
@@ -35,5 +43,6 @@ void FileReader::Read()
 
 	}
 
+	//fout.close();
 	fin.close();
 }

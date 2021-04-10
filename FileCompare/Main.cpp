@@ -8,8 +8,10 @@ using namespace std;
 
 int main()
 {
-	string file1 = R"(C:\Users\haiml\debug.log)";
-	string file2 = R"(C:\Users\haiml\index.html)";
+	//string file1 = R"(C:\Users\haiml\debug.log)";
+	//string file2 = R"(C:\Users\haiml\index.html)";
+	string file1 = R"(C:\Users\haiml\debug.txt)";
+	string file2 = R"(C:\Users\haiml\debug.txt)";
 
 	FileReader fr1(file1);
 	FileReader fr2(file2);
